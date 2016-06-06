@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.techup.app.myfirstandroid2.chatapp.RegisterActivity">
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_top_register"
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_enter_the_required_fields"
+
+        />
+    <EditText
+        android:layout_marginTop="@dimen/margin_top_register"
+        android:id="@+id/edit_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        />
+    <EditText
+        android:layout_marginTop="@dimen/margin_top_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_password"
+        android:inputType="textPassword"
+        android:layout_below="@id/edit_email"
+        />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_top_register"
+            android:id="@+id/ll_name"
+android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_password">
+
+            <EditText
+                android:hint="@string/firstname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+            <EditText
+            android:hint="@string/lastname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:layout_marginTop="@dimen/margin_top_register"
+        android:layout_below="@+id/ll_name"
+        android:hint="@string/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_contact_number"
+        />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/edit_contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"
+        />
+</RelativeLayout>
