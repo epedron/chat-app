@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +7,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="io.techup.app.myfirstandroid2.chatapp.MainActivity">
+    tools:context="io.techup.app.myfirstandroid2.chatapp.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/dc86pdece"
+        android:scaleType="centerCrop"/>
+    <EditText
+
+        android:hint="@string/email"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+
+
+        />
+    <EditText
+
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+
+           />
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/login"/>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"
+        android:text="@string/sign_up"/>
+</LinearLayout>
